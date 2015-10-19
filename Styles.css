@@ -1,0 +1,224 @@
+html,body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.buttonholder a{
+	color:black;
+}
+.buttonholder a:hover{
+	color:white;
+}
+.jumbotron {
+	background-color: rgb(40,40,40);
+	background-image: url("Photos/mountains.jpg");
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+}
+#jumbo {
+	padding:0px;
+}
+.showStuff{
+	background-color:rgb(250,250,250);
+}
+#bootstrap-overrides {
+	font-family: 'Raleway', sans-serif;
+	font-size: 100px;
+}
+.jumbotron p{
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	font-size:auto;
+	padding-top:40px;
+}
+.jumbotron .container {
+	position:relative;
+	top:23px;
+	text-align: center;
+
+
+}
+.jumbotron p {
+
+}
+.jumbotron .a {
+	padding-top:300px;
+	font-size:auto;
+	color:white;
+}
+
+#enterbutton {
+	font-family: 'Raleway', sans-serif;
+
+}
+.buttonholder {
+	padding-top:250px;
+
+}
+.controls{
+	width:300px;
+	float:center;
+}
+#searchbutton{
+	float:center;
+	font-family: 'Raleway', sans-serif;
+
+}
+#map{
+	height:80%;
+	width:75%;
+	float:left;
+	padding-left:5px;
+}
+.checklist{
+	width:25%;
+	float:right;
+	padding-right: 5px;
+	padding-left:5px;
+
+
+
+}
+.checklistcontainer {
+	background-color: rgb(250, 250, 250);
+	height:550px;
+	overflow-y: auto;
+
+}
+#mapcontainer{
+	padding-left:5px;
+	height:100%;
+	padding-bottom:10px;
+}
+.timetogetawatch {
+	background-image: url("Photos/trees.jpg");
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top: 1px solid #dbdbdb;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.showStuff h1{
+	text-align: center;
+	padding-bottom: 4px;
+}
+#directions-panel{
+	width:50%;
+	float:left;
+	height:80%;
+}
+#map-canvas{
+	width:50%;
+	float:right;
+	height:80%;
+}
+.buttonholder2{
+	padding-top: 5px;
+	text-align: center;
+
+}
+#fesults{
+	font-size: 27px;
+}
+#start{
+	width:500px;
+	height:50px;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+#end{
+	width:500px;
+	height:50px;
+	font-size:30px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron h1 {
+	margin-top: 25px;
+	font-size: 21px;
+	text-align: center;
+
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+
+
+.jumbotron p {
+	margin-top: 25px;
+	font-size: 21px;
+	text-align: center;
+
+	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 4s; /* Firefox < 16 */
+	-ms-animation: fadein 4s; /* Internet Explorer */
+	-o-animation: fadein 4s; /* Opera < 12.1 */
+	animation: fadein 4s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}

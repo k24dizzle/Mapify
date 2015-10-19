@@ -1,0 +1,110 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapify</title>
+
+  <link rel="stylesheet" type="text/css" href="Styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="bootstrap.min.css" rel= "stylesheet" text= "text/css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMVkOLrJpc8zFyJIeCpnsRu7I7sVSUjJI&callback=initMap">
+</script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places" type="text/javascript"></script>
+<!-- Load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<!-- Load ScrollTo -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+<!-- Load LocalScroll -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script> 
+
+<script src="App.js"></script>
+<script>
+
+   // When the document is loaded...
+   $(document).ready(function()
+   {
+       // Scroll the whole document
+       $('#box-links').localScroll({
+        target:'body'
+      });
+     });
+ </script> 
+</head>
+<body>
+  <div class = "jumbotron" id = "jumbo">
+    <div class = "container">
+      <h1 id="bootstrap-overrides"> Mapify </h1>
+      <p> Let us help plan where you want to go! </p>
+
+
+      <input id = "complete" class="controls" type="text" placeholder="Enter a location" autocomplete = "on" onkeydown="if (event.keyCode == 13) document.getElementById('jtbutton').click()">
+      <p>  </p>
+      <a href = "#box1"> <div class = "buttonholder" id = "box-links">
+        <button type="button" class="btn btn-success btn-lg" onclick = "loadMap()" id="jtbutton"> Begin
+        </button>
+
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class = "showStuff"> 
+  <h1 id = "box1">  Where would you like to go! </h1>
+  <div id = "mapcontainer">
+    <div id = "map">
+
+
+    </div>
+
+
+    <div class = "checklist">
+      <h1> <u> Places of Interest </u> </h1>
+      <div class = "checklistcontainer">
+       <div id="listing">
+        <table id="resultsTable">
+          <tbody id="results"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class = "buttonholder2"> <button type="button" class="btn btn-success btn-lg" onclick = "jtheb()" > Calculate 
+    </button> </div>
+  </div>
+</div>
+</div>
+<center><div class = "timetogetawatch">
+  <h1> Let's Start Crafting a Schedule!</h1>
+  <input id = "start" class="control" type="text" 
+  placeholder="Where are you starting from?" autocomplete = "on">
+
+  <div id="listing">
+    <table id="resultsTable">
+      <tbody id="fesults"></tbody>
+    </table>
+  </div>
+  <input id = "end" class="control" type="text" 
+  placeholder="Where do you want to end?" autocomplete = "on">
+  <p> </p>
+  <button type="button" class="btn btn-success btn-lg" onclick = "calcRoute()" > Create! 
+  </button>
+</div> </center>
+<div class = "final">
+  <h1> <u> Here's your final route! Have fun!</u> </h1>
+  <h1> Directions </h1>
+  <div id = "directions-panel">
+
+  </div>
+  <button type="button" class="btn btn-success btn-lg" onclick = "next()" > Next! 
+  </button>
+  <div id = "map-canvas">
+
+    <div id = "map-placer">
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
